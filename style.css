@@ -1,8 +1,3 @@
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
 :root{
 	--mainColor:#606B56;
 	--secondaryColor:#515a48;
@@ -22,10 +17,20 @@
 
 
 }
-body {
-  line-height: 1.6;
-  font-family: "Robot",sans-serif;
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
+html, body{
+	scroll-behavior: smooth;
+}
+
+body *{
+	transition: 0.3s;
+}
+
+
 h1, h2, h3, h5, h6, strong{
 	color: var(--mainText);
 	font-family: 'Russo One', sans-serif;
@@ -37,48 +42,91 @@ p, li, span, label, input, textarea{
 	font-family: 'Roboto Mono', monospace;
 }
 
-ul {
-  list-style: none;
-}
- a {
-  text-decoration: none;
-  color: var(--secondaryText);
-}
-ul li a:hover{
-  color: #000;
-  border-bottom: 2px solid #333;
-}
-.hero {
-  background-color: var(--mainColor);
-	border-bottom:1px solid var(--borderColor);
-	overflow:auto;
-  height: 100vh;
+a{
+	text-decoration: none;
+	
 }
 
-.hero .container {
-  width: 1280px;
-  margin: 0 auto;
-  margin-top: 60px;
-  position:absolute;
-  bottom: 0;
-  left:32px; 
-  height: 90vh;
-  background-color: var(--secondaryColor);
-  border: var(--borderColor);
-  border-radius:10px 10px 0px 0px;
-  box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
-  border:1px solid var(--borderColor);
+ul{
+	list-style: none;
 }
-.containter .container-1  {
-  padding: 50px;
+
+h1 { font-size: 56px;}
+h2 { font-size: 36px;}
+h3 { font-size: 28px;}
+h4 { font-size: 24px;}
+h5 { font-size: 20px;}
+h6 { font-size: 16px;}
+
+
+.s1{
+	background-color: var(--mainColor);
+	border-bottom:1px solid var(--borderColor);
+	overflow:auto;
 }
-/* Navbar */
-.navbar {
-  display: flex;
+
+.s2{
+	background-color: var(--secondaryColor);
+	border-bottom:1px solid var(--borderColor);
+	overflow:auto;
+}
+
+.main-container{
+	width: 1280px;
+	margin: 0 auto;
+}
+
+
+.greeting-wrapper{
+	display: grid;
+	text-align: center;
+	align-content: center;
+	min-height: 4.8em;
+
+}
+
+.intro-wrapper{
+	background-color: var(--secondaryColor);
+	border:1px solid var(--borderColor);
+	border-radius:5px 5px 0 0;
+
+
+	-webkit-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+	-moz-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+	box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+
+	display: flex;
+  flex-direction: column;
+	
+
+}
+
+
+.nav-wrapper{
+	border-radius:5px 5px 0 0;
+	grid-area:nav-wrapper;
+	border-bottom: 1px solid var(--borderColor);
+	display: flex;
   height: 70px;
-  align-items: center;
-  justify-content: space-between;
-  border-bottom: 1px solid #000;
+	justify-content: space-between;
+	align-items: center;
+	background-color: var(--mainColor);
+}
+
+#navigation a{
+	color:var(--mainText);
+}
+
+
+#navigation{
+	margin:0;
+	padding: 10px;
+}
+
+#navigation li{
+	display: inline-block;
+	margin-right: 5px;
+	margin-left:20px;
 }
 
 .dots-wrapper{
@@ -104,26 +152,16 @@ ul li a:hover{
 	width: 15px;
 	border-radius: 50%;
 	margin: 5px;
+
+	-webkit-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+	-moz-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
 	box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
 
 }
 
-.navbar .list {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content:center;
-}
-.navbar .list li {
-  margin: 0 30px;
-}
-.navbar .list a {
-  font-size: 15px;
-  color:var(--mainText);
-  
-}
 
-/* Hero section */
+
+
 .flex-row {
   display: flex;
   align-items: center;
@@ -160,9 +198,12 @@ ul li a:hover{
   font-size: 18px;
   padding: 10px 20px;
   background-color:var(--buttonColor);
-  color: var(--secondaryText);
   cursor: pointer;
 }
+.btn-big a{
+  color: var(--mainText);
+}
+
 
 /* About section */
 
@@ -199,10 +240,7 @@ ul li a:hover{
 
 
 /* skill */
- .container{
-  width: 1280px;
-  margin: 0 auto;
-}
+
 .flex {
   display: flex;
   justify-content: center;
@@ -239,8 +277,9 @@ ul li a:hover{
 }
 
 .languages .card h4 {
-  font-size: 20px;
+  font-size: 16px;
   margin-bottom: 10px;
+  font-family:"Roboto", sans-serif;
 }
 
 .languages .card:hover {
@@ -334,6 +373,7 @@ ul li a:hover{
   padding: .5em .75em;
   border-radius: .25em;
   cursor: pointer;
+  font-family: "Roboto", sans-serif;
 }
 
 .btn:hover, .btn:focus {
@@ -420,23 +460,3 @@ ul li a:hover{
 
 /* media query */
 
-@media screen and (max-width: 1280px){
-	.container{
-		width: 90%;
-	}
-
-}
-@media screen and (max-width: 800px){
-	.intro-wrapper{
-		grid-template-columns: 1fr;
-		grid-template-areas: 
-			'navbar'
-			'column'
-			/* 'right-column' */
-		;
-    
-	}
-  .column-2{
-		justify-content: center;
-	}
-}

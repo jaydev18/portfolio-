@@ -174,6 +174,10 @@ h6 {
   justify-content: center;
   /* height: 500px; */
 }
+.flex-row .col-2 img {
+ filter: drop-shadow(0px 10px 3px rgba(21, 21, 21, 0.401));
+}
+
 .flex-row .column {
   padding: 50px;
 }
@@ -191,8 +195,10 @@ h6 {
   font-size: 18px;
   padding: 10px 20px;
   margin-right: 30px;
-  background: none;
+  background: #000;
   cursor: pointer;
+  border: none;
+  border-radius: 2px;
   color: var(--secondaryText);
 }
 .btn-small:hover {
@@ -202,8 +208,14 @@ h6 {
 .btn-big {
   font-size: 18px;
   padding: 10px 20px;
+  border: none;
+  border-radius: 2px;
   background-color: var(--buttonColor);
   cursor: pointer;
+}
+.btn-big:hover{
+  background-color: #000;
+  
 }
 .btn-big a {
   color: var(--mainText);

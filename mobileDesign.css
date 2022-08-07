@@ -2,6 +2,7 @@
   .main-container{
     max-width: 95%;
   }
+
   .main-container .nav-wrapper{
     flex-direction: column;
     height: 120px;
@@ -14,16 +15,23 @@
     
     margin: 0 3px;
   }
-  /* .main-container .flex-row{
+  .main-container .flex-row{
     display: flex;
     flex-direction: column-reverse;
     overflow: hidden;
     text-align: center;
+    padding: 0;
   }
-  .flex-row:nth-child(2){
-    height: 200px;
-    width: 200px;
-    display: block;
-    border-radius: 50%;
-  } */
+  .flex-row .col-2 img{
+    width: 220px ;
+    height: 250px;
+    padding: 0;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+  }
+  .flex-row .column {
+    padding: 20px;
+  }
 }

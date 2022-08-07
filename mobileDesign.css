@@ -1,0 +1,29 @@
+@media (max-width: 700px){
+  .main-container{
+    max-width: 95%;
+  }
+  .main-container .nav-wrapper{
+    flex-direction: column;
+    height: 120px;
+    padding: 0px;
+  }
+  #navigation li {
+    margin-left: 5px;
+  }
+  .list li a{
+    
+    margin: 0 3px;
+  }
+  /* .main-container .flex-row{
+    display: flex;
+    flex-direction: column-reverse;
+    overflow: hidden;
+    text-align: center;
+  }
+  .flex-row:nth-child(2){
+    height: 200px;
+    width: 200px;
+    display: block;
+    border-radius: 50%;
+  } */
+}

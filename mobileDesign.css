@@ -22,6 +22,10 @@
     text-align: center;
     padding: 0;
   }
+  .flex-row .col-1 p{
+   font-size: 15px;
+   opacity: 0.8;
+  }
   .flex-row .col-2 img{
     width: 200px ;
     height: 200px;
@@ -33,5 +37,13 @@
   }
   .flex-row .column {
     padding: 20px;
+  }
+
+  .flx-btn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    gap: 20px;
   }
 }

@@ -126,6 +126,7 @@ h6 {
 
 #navigation a {
   color: var(--mainText);
+  
 }
 
 
@@ -139,8 +140,14 @@ h6 {
   display: inline-block;
   margin-right: 5px;
   margin-left: 20px;
+  
 }
-
+#navigation .current{
+  color: #2aca3e;
+}
+#navigation .list li a:hover{
+  border-bottom: 2px solid #777;
+}
 .dots-wrapper {
   display: flex;
   padding: 10px;
@@ -219,8 +226,19 @@ h6 {
   background-color: #000;
   
 }
-.btn-big a {
+ a {
   color: var(--mainText);
+}
+
+.social{
+  margin-top: 20px;
+  
+}
+.social a {
+  color: #fff;
+  font-size: 25px;
+  margin-left: 4px;
+  margin-right: 10px;
 }
 
 /* About section */

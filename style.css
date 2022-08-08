@@ -145,9 +145,7 @@ h6 {
 #navigation .current{
   color: #2aca3e;
 }
-#navigation .list li a:hover{
-  border-bottom: 2px solid #777;
-}
+
 .dots-wrapper {
   display: flex;
   padding: 10px;
@@ -240,6 +238,7 @@ h6 {
   margin-left: 4px;
   margin-right: 10px;
 }
+
 
 /* About section */
 

@@ -249,8 +249,14 @@
 			<a href=""></a>
 			<h2  style="text-align: center;">Get In Touch</h2>
 
-			<form id="contact-form">
-				<a name="contact"></a>
+			<form id="contact-form"  name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true">
+        <input type="hidden" name="form-name" value="contact">
+
+          <p class="hidden">
+          <label>
+            Don’t fill this out if you’re human: <input name="bot-field" />
+        </label>
+        </p>
 
 				<label>Name</label>
 				<input class="input-field" type="text" name="name">

@@ -128,6 +128,8 @@ h6 {
   color: var(--mainText);
 }
 
+
+
 #navigation {
   margin: 0;
   padding: 10px;
@@ -425,6 +427,10 @@ h6 {
 }
 .contact-us h2 {
   padding: 20px;
+}
+.hidden{
+  visibility: hidden;
+  height: 0;
 }
 #contact-form {
   display: block;

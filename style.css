@@ -142,9 +142,6 @@ h6 {
   margin-left: 20px;
   
 }
-#navigation .current{
-  color: #2aca3e;
-}
 
 .dots-wrapper {
   display: flex;
@@ -198,7 +195,7 @@ h6 {
   margin-bottom: 30px;
 }
 
-.btn-small {
+.btn-secondary {
   font-size: 18px;
   padding: 10px 20px;
   margin-right: 30px;
@@ -207,20 +204,22 @@ h6 {
   border: none;
   border-radius: 2px;
   color: var(--secondaryText);
+  text-align: center;
 }
-.btn-small:hover {
+.btn-secondary:hover {
   background-color: var(--buttonColor);
   color: var(--mainText);
 }
-.btn-big {
+.btn-primary {
   font-size: 18px;
   padding: 10px 20px;
   border: none;
   border-radius: 2px;
   background-color: var(--buttonColor);
   cursor: pointer;
+  text-align: center;
 }
-.btn-big:hover{
+.btn-primary:hover{
   background-color: #000;
   
 }
@@ -238,7 +237,6 @@ h6 {
   margin-left: 4px;
   margin-right: 10px;
 }
-
 
 /* About section */
 
@@ -282,7 +280,7 @@ h6 {
   flex-wrap: wrap;
 }
 .card {
-  background-color: #fff;
+  background-color: var(--mainColor);
   color: var(--mainColor);
   border-radius: 10px;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
@@ -311,7 +309,9 @@ h6 {
 .languages .card h4 {
   font-size: 16px;
   margin-bottom: 10px;
-  font-family: "Roboto", sans-serif;
+  color: #fff;
+  font-weight:lighter;
+  font-family: "Russo One", sans-serif;
 }
 
 .languages .card:hover {
@@ -333,7 +333,8 @@ h6 {
 }
 .card-body h6 {
   font-size: 16px;
-  color: #000;
+  /* color: #000; */
+  color: #fff;
 }
 
 /* card */
@@ -347,15 +348,18 @@ h6 {
 
 .project-card {
   --padding: 1rem;
-  background: white;
-  border: 1px solid #777;
+  background: var(--secondaryColor);
+  /* border: 1px solid var(--borderColor); */
   border-radius: 0.25rem;
   overflow: hidden;
+  box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
+
 }
 
 .card.card-shadow {
   border: none;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+ 
 }
 
 .card-header {
@@ -415,7 +419,7 @@ h6 {
 .btn.btn-outline {
   background: none;
   border: 1px solid var(--color);
-  color: var(--color);
+  color: #fff;
 }
 
 .btn.btn-outline:hover,
